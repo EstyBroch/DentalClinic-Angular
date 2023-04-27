@@ -1,0 +1,8 @@
+<h1>{{currentDate |date}} </h1>
+<hr>
+<table class="table table-striped">
+    <tr *ngFor="let a of appointments">
+        <td> {{a.time}} </td>
+        <td>{{a.patient}} -   {{a.type}}</td>
+</tr>
+</table>
